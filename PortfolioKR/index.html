@@ -1,135 +1,411 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <title>PortfolioKR</title>
-    <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable=yes">
+    <meta property="og:url" content="https://risa-portfolio.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="カネコリサのポートフォリオ">
+    <meta property="og:description" content="フリーランスに憧れるカネコリサのポートフォリオサイトです。">
+    <meta property="og:site_name" content="カネコリサのポートフォリオ">
+    <meta property="og:image" content="https://risa-portfolio.com/assets/images/common/risa-portfolio-ogp.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="カネコリサのポートフォリオ">
+    <meta name="twitter:description" content="フリーランスに憧れるカネコリサのポートフォリオサイトです。">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/common/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/common/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/common/favicon.ico">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/top.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-narrow.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100..900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-<header id="header">
-    <!-- <div class="logo">
-        <a href="#"><img src="img/logo.svg" alt="FA EXHIBITION"></a>
-    </div> -->
-
-    <nav id="navi">
-        <ul class="menu">
-            <li><a href="#">TOP</a></li>
-            <!-- <li><a href="#information">INFORMATION</a></li> -->
-            <li><a href="#gallery">GALLERY</a></li>
-            <!-- <li><a href="#access">ACCESS</a></li> -->
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-    </nav>
-
-    <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+<div class="body-wrapper">
+    <div id="cursor" class="cursor"></div>
+    <div class="top__bg-wrapper">
+        <img class="image-01" src="assets/images/top/bg-blue.png" alt="">
+        <img class="image-02" src="assets/images/top/bg-yellow.png" alt="">
+        <img class="image-03 " src="assets/images/top/bg-blue.png" alt="">
+        <img class="image-04" src="assets/images/top/bg-yellow.png" alt="">
     </div>
-</header>
-
-<div class="container">
+    <header class="header">
+        <div class="base p-head">
+            <a id="sp-hamburger" class="OpacityOn">
+                <div class="icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+            <nav class="sp-nav">
+                <ul>
+                    <li><a id="nav-link-1" href="https://risa-portfolio.com">HOME</a><span>home</span></li>
+                    <li><a id="nav-link-2" href="https://risa-portfolio.com/works">WORKS</a><span>works</span></li>
+                    <li><a id="nav-link-3" href="https://risa-portfolio.com/about">ABOUT</a><span>about</span></li>
+                </ul>
+                <img class="nav-illust" src="assets/images/common/nav-illust.png" alt="">
+            </nav>
+        </div>
+    </header>
+    <div class="header-top">
+        <div class="top__header-nav01">
+            <ul>
+                <li><a class="nav-a" href="#works">WORKS</a></li>
+                <li><a class="nav-a" href="#about">ABOUT</a></li>
+                <li><a class="nav-a" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
     <main>
-        <!-- メインビジュアル -->
-        <div id="mainvisual">
-            <img src="img/mainvisual01.jpg" alt="">
-            <img src="img/mainvisual02.jpg" alt="">
-            <img src="img/mainvisual03.jpg" alt="">
-        </div>
-
-        <!-- サイトタイトル -->
-        <h1 class="site-title inview fadein">Hello World!<br>Portfolio</h1>
-
-        <!-- Information
-        <section id="information" class="inview fadein">
-            <h2 class="section-title">INFORMATION</h2>
-            <p>
-                <span class="info-date-en">2021 JUL 1(THU)-3(SAT)</span>
-                <span class="info-time-en">DAY1 10am-6pm OTHER 10am-5:30pm</span>
-            </p>
-            <p class="info-place">at PARK SIDE HALL</p>
-            <p class="info-date-ja">
-                2021年7月1日(木)ー3日(土)<br>
-                Day1 10時〜18時　その他 10時〜17時30分
-            </p>
-        </section>  -->
-
-        <!-- サイドボタン -->
-        <div id="side-btn">
-            <a href="#">FOR VISITOR</a>
-            <a href="#">FOR EXHIBITOR</a>
-        </div>
-
-        <!-- Gallery -->
-        <section id="gallery" class="wrapper">
-            <h2 class="section-title inview fadein">GALLERY</h2>
-            <ul class="list">
-                <li class="inview fadein"><img src="img/spring.jpg" alt=""></li>
-                <li class="inview fadein"><img src="img/summer.jpg" alt=""></li>
-                <li class="inview fadein"><img src="img/autumn.jpg" alt=""></li>
-                <li class="inview fadein"><img src="img/sea.jpg" alt=""></li>
-                <li class="inview fadein"><img src="img/bridge.jpg" alt=""></li>
-                <li class="inview fadein"><img src="img/river.jpg" alt=""></li>
-            </ul>
+        <section class="top">
+            <div class="scroll-illust"><img src="assets/images/top/scroll-illust-apng.png" alt="scroll"></div>
+            <div class="top-wrapper">
+                <div class="top__logo-text">
+                    <h1>
+                        <span><img src="assets/images/common/portfolio_logo-1.png" alt="カ" width="80px" height="120px"></span>
+                        <span><img src="assets/images/common/portfolio_logo-2.png" alt="ネ" width="52px" height="120px"></span>
+                        <span><img src="assets/images/common/portfolio_logo-3.png" alt="コ" width="50px" height="120px"></span>
+                        <span><img src="assets/images/common/portfolio_logo-4.png" alt="リ" width="85px" height="120px"></span>
+                        <span><img src="assets/images/common/portfolio_logo-5.png" alt="サ" width="25px" height="120px"></span>
+                        <span><img src="assets/images/common/portfolio_logo-7.png" alt="の" width="49px" height="120px"></span>
+                        <span><img src="assets/images/common/portfolio_logo-8.png" alt="ポ" width="141px" height="120px"></span>
+                        <span><img src="assets/images/common/portfolio_logo-9.png" alt="ー" width="33px" height="120px"></span>
+                        <span><img src="assets/images/common/portfolio_logo-10.png" alt="ト" width="33px" height="120px"></span>
+                        <span><img src="assets/images/common/portfolio_logo-11.png" alt="フ" width="56px" height="120px"></span>
+                        <span><img src="assets/images/common/portfolio_logo-12.png" alt="ォ" width="33px" height="120px"></span>
+                        <span><img src="assets/images/common/portfolio_logo-13.png" alt="リ" width="40px" height="120px"></span>
+                        <span><img src="assets/images/common/portfolio_logo-14.png" alt="オ" width="66px" height="120px"></span>
+                        <span><img src="assets/images/common/portfolio_logo-15.png" alt="。" width="38px" height="120px"></span>
+                    </h1>
+                    <p class="logo-sub-text">PHOTOGRAPHY<br>APPLICATION DESIGN<br>WEB DESIGN<br>GRAPHIC DESIGN</p>
+                </div>
+                <div class="top__MV">
+                    <img src="assets/images/top/mv.jpg" alt="メインビジュアル">
+                </div>
+            </div>
         </section>
-
-        <!-- Access
-        <section id="access">
-            <h2 class="section-title">ACCESS</h2>
-            <p class="place">PARK SIDE HALL</p>
-            <p class="address">
-                〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL<br>
-                PARK SIDE HALL, 1-1-1 Jiyugaoka, Meguro-ku, Tokyo
-            </p>
-            <p class="contact">
-                Tel: 03-1111-1111<br>
-                E-mail: info@xxxxxxx.jp
-            </p>
-            <a class="btn" href="#" target="_blank">GOOGLE MAP</a>
-        </section> -->
-
-        <!-- Contact -->
-        <section id="contact" class="wrapper">
-            <h2 class="section-title">CONTACT</h2>
-            <a class="btn" href="#">各種お問い合わせ</a>
-            <a class="btn" href="#">その他のお問い合わせ</a>
+        <section id="work" class="work js-parallax-trigger">
+            <div class="work__inner">
+                <h2 class="heading heading--work">
+          <span class="heading__wrapper">
+            <span class="heading__en split-text js-split-target js-observe-target">Works</span>
+          </span>
+                    <span class="heading__jp animation-fadein js-observe-target">
+            制作物
+          </span>
+                </h2>
+                <ul class="work-list js-works-list js-observe-target">
+                    <li class="work-list__item js-works-item">
+                        <a href="/works/shizuka/" class="works-list__link">
+                            <span class="work-list__category">Website</span>
+                            <h3 class="work-list__title">Shizuka Official Website</h3>
+                            <div class="work-list__image">
+                                <img src="/assets/images/top/top_shizuka.webp" width="1400" height="889" alt="Shizuka Official Website">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-list__item js-work-item">
+                        <a href="/work/kesora/" class="work-list__link">
+                            <span class="workslist__category">Website</span>
+                            <h3 class="work-list__title">Kesora 2022 Autumn & Winter Collection</h3>
+                            <div class="work-list__image">
+                                <img src="/assets/images/top/top_kesora.webp" width="1400" height="889" alt="Kesora 2022 Autumn & Winter Collection">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="works-list__item js-work-item">
+                        <a href="/work/portfolio/" class="work-list__link">
+                            <span class="work-list__category">Website</span>
+                            <h3 class="work-list__title">Yuka Kanno Portfolio</h3>
+                            <div class="work-list__image">
+                                <img src="/assets/images/top/top_portfolio.webp" width="1400" height="889" alt="Yuka Kanno Portfolio">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-list__item js-works-item">
+                        <a href="/work/strawberry/" class="work-list__link">
+                            <span class="work-list__category">Banner</span>
+                            <h3 class="work-list__title">ストロベリーシェイク 販促バナー（架空）</h3>
+                            <div class="work-list__image">
+                                <img src="/assets/images/top/top_strawberry.webp" width="1400" height="889" alt="Strawberry Shake Banner">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-list__item js-work-item">
+                        <a href="/work/drink/" class="work-list__link">
+                            <span class="work-list__category">Banner</span>
+                            <h3 class="work-list__title">スポーツドリンク 販促バナー（架空）</h3>
+                            <div class="work-list__image">
+                                <img src="/assets/images/top/top_drink.webp" width="1400" height="889" alt="Sports Drink Banner">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="work-list__item js-work-item">
+                        <a href="/work/trip/" class="work-list__link">
+                            <span class="work-list__category">Banner</span>
+                            <h3 class="work-list__title">旅行メディア サイト内バナー（架空）</h3>
+                            <div class="work-list__image">
+                                <img src="/assets/images/top/top_trip.webp" width="1400" height="889" alt="Trip Media Site Banner">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="cursor cursor--works pc-only js-cursor-element">
+                    <p class="cursor__text">View</p>
+                </div>
+            </div>
         </section>
-
-        <!-- Accessの背景画像 -->
-        <div class="bg"></div>
+        <section id="works" class="works">
+            <img class="image-05" src="assets/images/top/bg-blue.png" alt="">
+            <img class="image-06" src="assets/images/top/bg-yellow.png" alt="">
+            <img class="image-07" src="assets/images/top/bg-blue.png" alt="">
+            <img class="image-08" src="assets/images/top/bg-yellow.png" alt="">
+            <h2 class="works__title">WORKS</h2>
+            <div class="works__wrapper">
+                <a class="works-01" href="https://juri-portfolio.com/works-web-aomugikashiten">
+                    <div class="works__hover-btn fadeUpTrigger">
+                        <div class="works-img">
+                            <img src="assets/images/single/aomugi/mockup-01.jpg" alt="aomugi菓子店">
+                        </div>
+                    </div>
+                    <div class="works__hover-btn">
+                        <div class="work-01__text">
+                            <div class="description-text">
+                                <div class="tag-text">website</div>
+                                <div><h3>aomugi菓子店</h3></div>
+                                <p class="works__p">大阪府にあるご夫婦経営の小さな洋菓子店<br>aomugi菓子店様の公式サイトを制作しました</p>
+                                <span>direction / design / coding / wordpress</span>
+                            </div>
+                            <div class="works-btn"><p class="works-btn__p">詳しくみる</p></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="works-02" href="https://juri-portfolio.com/works-web-portfolio">
+                    <div class="works__hover-btn fadeUpTrigger">
+                        <div class="works-img">
+                            <img src="assets/images/top/mockup-02.jpg" alt="ポートフォリオ">
+                        </div>
+                    </div>
+                    <div class="works__hover-btn">
+                        <div class="work-02__text">
+                            <div class="description-text">
+                                <div class="tag-text">website</div>
+                                <div><h3>ポートフォリオ</h3></div>
+                                <p class="works__p">転職活動のための<br>ポートフォリオサイトを制作しました</p>
+                                <span>direction / design / coding</span>
+                            </div>
+                            <div class="works-btn"><p class="works-btn__p">詳しくみる</p></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="works-01" href="https://juri-portfolio.com/works-web-figma">
+                    <div class="works__hover-btn fadeUpTrigger">
+                        <div class="works-img">
+                            <img src="assets/images/top/mockup-03.jpg" alt="Figma講座LP">
+                        </div>
+                    </div>
+                    <div class="works__hover-btn">
+                        <div class="work-01__text">
+                            <div class="description-text">
+                                <div class="tag-text">website</div>
+                                <div><h3>Figma講座LP</h3></div>
+                                <p class="works__p">デジタルハリウッドbyLIGにて開催されている<br>Figma講座のLPデザインを制作しました</p>
+                                <span>design</span>
+                            </div>
+                            <div class="works-btn"><p class="works-btn__p">詳しくみる</p></div>
+                        </div>
+                    </div>
+                </a>
+                <a class="works-02" href="https://juri-portfolio.com/works-banner-kyoto">
+                    <div class="works__hover-btn fadeUpTrigger">
+                        <div class="works-img">
+                            <img src="assets/images/top/mockup-04.jpg" alt="キャンペーンバナー">
+                        </div>
+                    </div>
+                    <div class="works__hover-btn">
+                        <div class="work-02__text">
+                            <div class="description-text">
+                                <div class="tag-text">banner</div>
+                                <div><h3>鉄道会社 サイト内バナー</h3></div>
+                                <p class="works__p">架空の鉄道会社が実施するキャンペーン用の<br>サイト内バナーを制作しました</p>
+                                <span>banner design</span>
+                            </div>
+                            <div class="works-btn"><p class="works-btn__p">詳しくみる</p></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="works__all-btn">
+                <a class="big-btn" href="https://juri-portfolio.com/works">
+                    <div class="js_piechart" data-chartval="100">
+                        <svg class="pie_chart bg">
+                            <circle></circle>
+                        </svg>
+                        <svg class="pie_chart fg">
+                            <circle></circle>
+                        </svg>
+                        <p class="btn-text01">すべてみる</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <img class="image-09" src="assets/images/top/bg-blue.png" alt="">
+            <img class="image-10" src="assets/images/top/bg-yellow.png" alt="">
+            <img class="image-11" src="assets/images/top/bg-blue.png" alt="">
+            <img class="image-12" src="assets/images/top/bg-yellow.png" alt="">
+            <h2 class="about__title">ABOUT</h2>
+            <div class="about__profile">
+                <div class="about__profile-text">
+                    <h3>カネコ　リサ </h3>
+                    <p class="about__profile-text-p">個人の方にSNSアイコン等のイラストを描く活動をしていました。
+                        情報やブランドイメージを動きのある形で伝えることができるWebデザインに惹かれ、Webデザイナーを目指すことを決意。
+                        8ヶ月間スクールでWebデザインについて学び、現在は転職活動をしています。</p>
+                    <div class="about__profile-btn">
+                        <a class="big-btn" href="https://juri-portfolio.com/about">
+                            <div class="js_piechart" data-chartval="100">
+                                <svg class="pie_chart bg">
+                                    <circle></circle></svg>
+                                <svg class="pie_chart fg">
+                                    <circle></circle>
+                                </svg>
+                                <p class="btn-text02">詳しくみる</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-image">
+                    <img class="profile-image-pic fadeInTrigger" src="assets/images/top/fukui-juri.jpg" alt="カネコリサ">
+                    <div class="rotate-text"><img src="assets/images/top/rotate-text.png" alt="ポートフォリオへようこそ"></div>
+                </div>
+            </div>
+            <div class="about__illust">
+                <div class="about__illust-introduction">
+                    <div><img src="assets/images/top/about-illust.png" alt="絵を描いているイラスト"></div>
+                    <p>丸みのあるアイコンイラストや<br>手描きのイラストも描くことができます</p>
+                </div>
+                <div class="scroll-infinity">
+                    <div class="scroll-infinity__wrap">
+                        <ul class="scroll-infinity__list scroll-infinity__list--left">
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_01.png" /><span>お散歩ビンゴイラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_02.png" /><span>エステサロンイラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_03.png" /><span>エステサロンイラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_04.png" /><span>ハンドメイドショップSNSアイコン・ロゴ</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_05.png" /><span>お菓子教室SNSアイコン</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_06.png" /><span>LINE着せ替え</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_07.png" /><span>SNSアイコン</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_08.png" /><span>クッキーショップイラスト</span></li>
+                        </ul>
+                        <ul class="scroll-infinity__list scroll-infinity__list--left">
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_01.png" /><span>お散歩ビンゴイラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_02.png" /><span>エステサロンイラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_03.png" /><span>エステサロンイラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_04.png" /><span>SNSアイコン</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_05.png" /><span>SNSアイコン</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_06.png" /><span>LINE着せ替え</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_07.png" /><span>SNSアイコン</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_08.png" /><span>クッキーショップイラスト</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="scroll-infinity">
+                    <div class="scroll-infinity__wrap">
+                        <ul class="scroll-infinity__list scroll-infinity__list--right">
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_09.png" /><span>キャンドルショップロゴ・イラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_11.png" /><span>ハンドメイドショップロゴ・イラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_12.png" /><span>トリマーSNSアイコン・ロゴ</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_13.png" /><span>カレンダーイラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_10.png" /><span>ネイルサロンロゴ・イラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_14.png" /><span>カレンダーイラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_15.png" /><span>月齢カード</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_16.png" /><span>ひらがな表</span></li>
+                        </ul>
+                        <ul class="scroll-infinity__list scroll-infinity__list--right">
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_09.png" /><span>キャンドルショップロゴ・イラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_11.png" /><span>ハンドメイドショップロゴ・イラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_12.png" /><span>トリマーSNSアイコン・ロゴ</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_13.png" /><span>カレンダーイラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_10.png" /><span>ネイルサロンロゴ・イラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_14.png" /><span>カレンダーイラスト</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_15.png" /><span>月齢カード</span></li>
+                            <li class="scroll-infinity__item"><img src="assets/images/top/illust/illust_16.png" /><span>ひらがな表</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-    <footer id="footer">
-        <div>
-            <!--
-            <p>FA EXHIBITION</p>
-            <p>〒152-0035 東京都目黒区自由が丘1-1-1 PARK SIDE HALL</p>
-            <p class="contact">
-                Tel: 03-1111-1111<br>
-                E-mail: info@xxxxxxx.jp
-            </p> -->
-            <ul class="sns">
-                <li><a href="#" target="_blank">Twitter</a></li>
-                <li><a href="#" target="_blank">Facebook</a></li>
-                <li><a href="#" target="_blank">Instagram</a></li>
-            </ul>
+    <footer>
+        <div id="contact" class="footer__contact">
+            <div class="contact__content-wrapper">
+                <img class="contact-illust" src="assets/images/common/footer-illust.png" alt="ありがとうのイラスト">
+                <p class="contact__thanks-message">ご覧いただきありがとうございます</p>
+                <img class="contact-text-image" src="assets/images/common/contact-text.png" alt="CONTACT">
+                <div class="contact__mail">
+                    <span>下記のメールアドレスにお気軽にご連絡ください</span>
+                    <div>
+                        <a class="mail-btn" href="mailto:peche.toitoitoi&#64;gmail.com">peche.toitoitoi@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+            <p id="page-top"><a href="#"><img src="assets/images/common/page-top.svg" alt="ページトップへ"></a></p>
         </div>
-        <ul class="copyright">
-            <li><a href="#">PRIVACY POLICY</a></li>
-            <li>&copy; FA EXHIBITION</li>
-        </ul>
+        <div class="footer__content-wrapper">
+            <nav>
+                <ul>
+                    <li class="footer__list01"><a href="https://juri-portfolio.com">TOP</a></li>
+                    <li class="footer__list01"><a href="https://juri-portfolio.com/works">WORKS</a></li>
+                    <li class="footer__list02"><a href="https://juri-portfolio.com/about">ABOUT</a></li>
+                </ul>
+            </nav>
+            <small>&copy; 2025 RISA KANEKO</small>
+        </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="/js/common.js"></script>
+    <script>
+        APNG.ifNeeded().then(function () {
+            var images = document.querySelectorAll(".apng-image");
+            for (var i = 0; i < images.length; i++) APNG.animateImage(images[i]);
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#sp-hamburger').on('click', function () {
+                $(this).find('.icon').toggleClass('open');
+                $('.sp-nav').slideToggle();
+            });
+
+            $('[id^="nav-link-"]').on('click', function () {
+                $('.icon').toggleClass('open');
+                $('.sp-nav').slideToggle();
+            });
+        });
+    </script>
+    <script>
+        function NavTopAnime() {
+            var scroll = $(window).scrollTop();
+            if (scroll >= 180) { // 上から400pxスクロールしたら
+                $('#sp-hamburger').removeClass('OpacityOn'); // #page-topについているDownMoveというクラス名を除く
+                $('#sp-hamburger').addClass('OpacityOff'); // #page-topについているUpMoveというクラス名を付与
+            } else {
+                if ($('#sp-hamburger').hasClass('OpacityOff')) { // すでに#page-topにUpMoveというクラス名がついていたら
+                    $('#sp-hamburger').removeClass('OpacityOff'); // UpMoveというクラス名を除き
+                    $('#sp-hamburger').addClass('OpacityOn'); // DownMoveというクラス名を#page-topに付与
+                }
+            }
+        }
+        $(window).scroll(function () {
+            NavTopAnime(); /* スクロールした際の動きの関数を呼ぶ*/
+        });
+    </script>
 </div>
 </body>
 </html>
