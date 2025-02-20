@@ -29,15 +29,18 @@ body {
 
 .top__header-nav01 ul {
     text-align: left;
-    font-size: 0.8333333333333334vw;
+    font-size: 2vw;
     font-weight: 500;
     letter-spacing: 0.4em;
-    display:flex;
-    justify-content: center;
+    display: flex;
+    flex-direction: column; /* 🔹縦並びにする */
+    padding: 0;
+    list-style: none; /* リストの黒点を消す */
 }
 
 .top__header-nav01 ul li {
-    writing-mode: vertical-rl;
+    display: block; /* 各リンクをブロック要素にする */
+    margin-bottom: 10px; /* 間隔を開ける */
     padding: 0 0.9375vw;
     transition: all 1s;
     position: relative;
