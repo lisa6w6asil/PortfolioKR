@@ -108,7 +108,7 @@ body {
 .top__logo-text h1 {
     display: flex;
     flex-wrap: wrap;
-    width: 26.125vw;
+    width: 21vw;
 }
 
 .top__logo-text h1 span {
@@ -263,6 +263,63 @@ body {
 
 
 /* works */
+.work {
+  padding-top: 70px;
+  padding-bottom: 90px;
+}
+
+.work__inner {
+  padding-inline: 30px;
+}
+
+.work-list__item {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.6s, transform 0.8s;
+  transition-timing-function: ease;
+}
+
+.work-list__item:first-of-type {
+  transition-delay: 0s;
+}
+
+.work-list__item:nth-of-type(2) {
+  transition-delay: 0.2s;
+}
+
+.work-list__item:nth-of-type(3) {
+  transition-delay: 0.4s;
+}
+
+.work-list__item:nth-of-type(4) {
+  transition-delay: 0.6s;
+}
+
+.work-list__item:nth-of-type(5) {
+  transition-delay: 0.8s;
+}
+
+.work-list__item:last-of-type {
+  transition-delay: 1.0s;
+}
+
+.work-list.is-show .works-list__item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+  .works {
+    padding-top: 110px;
+    padding-bottom: 150px;
+  }
+
+  .works__inner {
+    margin-inline: auto;
+    padding-inline: 40px;
+    max-width: 1160px;
+  }
+}
 
 .works {
     padding-bottom: 230px;
