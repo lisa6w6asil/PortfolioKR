@@ -25,7 +25,7 @@ ul {
 
 body {
   font-family: "YakuHanJP_Narrow","Zen Kaku Gothic New", sans-serif;
-  color: #37383C;
+  color: #475045;
   background-color: #fcfcfc;
   font-size: 15px;
   letter-spacing: 0.05em;
@@ -58,7 +58,7 @@ a {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #b3b3b3;
+    background: #dcfab6;
     z-index: 9999;
     transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
     transform: translate(0, 0);
@@ -70,7 +70,7 @@ a {
     left: -20px;
     width: 60px;
     height: 60px;
-    background: rgba(132, 181, 197, 0.5);
+    background: rgba(177, 217, 121, 0.5);
 }
 
 }
@@ -164,8 +164,6 @@ a {
   .header__number {
       display: none;
     }
-  }
-
 
 
   #sp-hamburger {
@@ -637,13 +635,13 @@ small {
   fill: var(--black);
 }
 
-.work-list {
+.works-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2列に設定 */
   gap: 20px; /* アイテム間のスペース */
 }
 
-.work-list__item {
+.works-list__item {
   background-color: #fff; /* アイテムの背景色を設定（任意） */
   padding: 15px; /* アイテムの内側の余白 */
   border-radius: 8px; /* アイテムの角を丸くする（任意） */
@@ -651,37 +649,37 @@ small {
 }
 
 @media (max-width: 768px) {
-  .work-list {
+  .works-list {
     grid-template-columns: 1fr; /* 画面幅が768px以下の場合は1列に */
   }
 }
 
-.work-list__link {
+.works-list__link {
   display: flex;
   flex-direction: column;
   color: var(--black);
   text-decoration: none; /* リンクの下線を消す */
 }
 
-.work-list__category {
+.works-list__category {
   margin-bottom: 8px;
   color: var(--gray);
   font-size: 1.2rem;
 }
 
-.work-list__title {
+.works-list__title {
   font-size: 1.5rem;
   font-weight: 600; /* 見出しの強調 */
 }
 
-.work-list__image {
+.works-list__image {
   order: -1;
   margin-bottom: 16px;
   overflow: hidden;
   text-align: center;
 }
 
-.work-list__image img {
+.works-list__image img {
   max-width: 100%; /* 画像が親要素の幅に収まるようにする */
   height: auto; /* 高さを自動調整 */
   border-radius: 8px; /* 画像を丸角に */
@@ -763,32 +761,32 @@ small {
     height: 16px;
   }
 
-  .work-list {
+  .works-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 63px 30px;
   }
 
-  .work-list__item {
+  .works-list__item {
     width: calc((100vw - 140px) / 3);
     max-width: 340px;
   }
 
-  .work-list__item:not(:last-of-type) {
+  .works-list__item:not(:last-of-type) {
     margin-bottom: 0;
   }
 
-  .work-list__title {
+  .works-list__title {
     font-size: 1.6rem;
     line-height: 1.3;
   }
 
-  .work-list__image img {
+  .works-list__image img {
     transition: transform 0.3s ease-out;
   }
 
-  .work-list__link:hover .work-list__image img {
+  .works-list__link:hover .work-list__image img {
     transform: scale(1.1);
   }
 

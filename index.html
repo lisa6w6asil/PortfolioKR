@@ -25,6 +25,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-narrow.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100..900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 
     <div class="bg sp-only"></div>
     <div class="loading js-loading">
@@ -51,14 +53,14 @@
         <div class="header__container">
             <div class="header__logo js-nav-link">
                 <a href="/">
-                    <img src="img/common/instagram.png" width="10" height="10" alt="insta">
+                    <img src="img/my.jpg" width="10" height="10" alt="insta">
                 </a>
             </div>
                 <ul class="sns-list sns-list--white">
                     <li class="sns-list__item">
                         <a href="https://instagram.com/2525guruguru" target="_blank" rel="noopener noreferrer" aria-label="Instagramを開く">
                             <svg>
-                                <use href="img/common/instagram.png"/>
+                                <use href="img/my.jpg"/>
                             </svg>
                         </a>
                     </li>
@@ -78,24 +80,15 @@
         <nav class="sp-nav">
             <ul>
                 <li><a id="nav-link-1" href="https://lisa6w6asil.github.io/PortfolioKR/">HOME</a><span>home</span></li>
-                <li><a id="nav-link-2" href="">WORKS</a><span>works</span></li>
-                <li><a id="nav-link-3" href="">ABOUT</a><span>about</span></li>
-                <li><a id="nav-link-4" href="">CONTACT</a><span>contact</span></li>
+                <li><a id="nav-link-2" href="#works">WORKS</a><span>works</span></li>
+                <li><a id="nav-link-3" href="#about">ABOUT</a><span>about</span></li>
+                <li><a id="nav-link-4" href="#contact">CONTACT</a><span>contact</span></li>
             </ul>
             <img class="nav-illust" src="assets/images/common/nav-illust.png" alt="">
         </nav>
     </div>
 </div>
 </header>
-    <div class="header-top">
-        <div class="top__header-nav01">
-            <ul>
-                <li><a class="nav-a" href="#works">WORKS</a></li>
-                <li><a class="nav-a" href="#about">ABOUT</a></li>
-                <li><a class="nav-a" href="#contact">CONTACT</a></li>
-            </ul>
-        </div>
-    </div>
     <main>
         <section class="top">
             <div class="scroll-illust"><img src="img/top/scroll.png" alt="scroll"></div>
@@ -115,7 +108,7 @@
                         <span><img src="img/top/logo-4.png"  alt="リ" width="33px" height="120px"></span>
                         <span><img src="img/top/logo-11.png"  alt="オ" width="33px" height="120px"></span>
                     </h1>
-                    <p class="logo-sub-text">PHOTOGRAPHY<br>APPLICATION DESIGN<br>WEB DESIGN<br>GRAPHIC DESIGN</p>
+                    <p class="logo-sub-text">CREATOR</p>
                 </div>
                 <div class="top__MV">
                     <img src="img/top/main.jpg" alt="メインビジュアル">
@@ -123,16 +116,60 @@
             </div>
         </section>
         <section id="works" class="works">
+            <h2 class="works__title">WORK</h2>
+                <div class="content">
+                    <div id="mainvisual">
+                      <img src="img/works/website.jpg" alt="">
+                        <div class="details">この画像の詳細情報です！</div>
+                    </div>
+                    <ul id="thumbnail">
+                    <li><img src="img/works/app_1.jpg" alt=""></li>
+                    <li><img src="img/works/app_2.jpg" alt=""></li>
+                    <li><img src="img/works/app_3.jpg" alt=""></li>
+                    <li><img src="img/works/app_4.jpg" alt=""></li>
+                    <li><img src="img/works/app_5.jpg" alt=""></li>
+                    <li><img src="img/works/app_6.jpg" alt=""></li>
+                    <li><img src="img/works/website.jpg" alt=""></li>
+                    </ul>
+                  </div>
+        </section>
+        <!-- <div class="works-scroll">
+            <div class="works-scroll__wrap">
+                <ul class="works-scroll__list works-scroll__list--left">
+                    <li class="works-scroll__item"><img src="img/photo/photo_10.jpg" /><span>風景写真</span></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_11.jpg" /><span>風景写真</span></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_12.jpg" /><span>風景写真</span></a></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_13.jpg"  /><span>風景写真</span></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_14.jpg"  /><span>風景写真</span></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_15.jpg"  /><span>風景写真</span></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_16.jpg"  /><span>風景写真</span></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_17.jpg"  /><span>風景写真</span></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_18.jpg"  /><span>風景写真</span></li>
+                </ul>
+                <ul class="works-scroll__list works-scroll__list--left">
+                    <li class="works-scroll__item"><img src="img/photo/photo_10.jpg" /><span>風景写真</span></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_11.jpg" /><span>風景写真</span></li>
+                    <li class="works-scrolly__item"><img src="img/photo/photo_12.jpg" /><span>風景写真</span></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_13.jpg"  /><span>風景写真</span></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_14.jpg"  /><span>風景写真</span></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_15.jpg"  /><span>風景写真</span></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_16.jpg"  /><span>風景写真</span></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_17.jpg"  /><span>風景写真</span></li>
+                    <li class="works-scroll__item"><img src="img/photo/photo_18.jpg"  /><span>風景写真</span></li>
+                </ul>
+            </div>
+        </div> -->
+        <section id="works" class="works">
             <h2 class="works__title">WORKS</h2>
             <div class="works__wrapper">
-                <a class="works-01" href="https://risa-portfolio.com/works-app-omikuji">
+                <a class="works-01" href="work1.html">
                     <div class="works__hover-btn fadeUpTrigger">
                         <div class="works-img">
                             <img src="img/works/app_1.jpg" alt="おみくじアプリ">
                         </div>
                     </div>
                     <div class="works__hover-btn">
-                        <div class="work-01__text">
+                        <div class="works-01__text">
                             <div class="description-text">
                                 <div class="tag-text">application</div>
                                 <div><h3>おみくじアプリ</h3></div>
@@ -143,14 +180,14 @@
                         </div>
                     </div>
                 </a>
-                    <a class="works-02" href="https://risa-portfolio.com/works-app-omikuji">
+                    <a class="works-02" href="work2.html">
                         <div class="works__hover-btn fadeUpTrigger">
                             <div class="works-img">
                                 <img src="img/works/app_2.jpg" alt="イーアール・シャンプー">
                             </div>
                         </div>
                         <div class="works__hover-btn">
-                            <div class="work-02__text">
+                            <div class="works-02__text">
                                 <div class="description-text">
                                     <div class="tag-text">application</div>
                                     <div><h3>イーアール・シャンプー</h3></div>
@@ -161,14 +198,14 @@
                             </div>
                         </div>
                     </a>
-                <a class="works-01" href="https://risa-portfolio.com/works-app-omikuji">
+                <a class="works-01" href="work3.html">
                     <div class="works__hover-btn fadeUpTrigger">
                         <div class="works-img">
                             <img src="img/works/app_3.jpg" alt="オムニバスゲームアプリ">
                         </div>
                     </div>
                     <div class="works__hover-btn">
-                        <div class="work-01__text">
+                        <div class="works-01__text">
                             <div class="description-text">
                                 <div class="tag-text">application</div>
                                 <div><h3>ICEinWonderLand</h3></div>
@@ -179,14 +216,14 @@
                         </div>
                     </div>
                 </a>
-                <a class="works-07" href="https://risa-portfolio.com/works-web-portfolio">
+                <a class="works-07" href="work4.html">
                     <div class="works__hover-btn fadeUpTrigger">
                         <div class="works-img">
                             <img src="img/works/website.jpg" alt="ポートフォリオ">
                         </div>
                     </div>
                     <div class="works__hover-btn">
-                        <div class="work-07__text">
+                        <div class="works-07__text">
                             <div class="description-text">
                                 <div class="tag-text">website</div>
                                 <div><h3>ポートフォリオ</h3></div>
@@ -197,14 +234,14 @@
                         </div>
                     </div>
                 </a>
-                <a class="works-01" href="https://risa-portfolio.com/works-app-omikuji">
+                <a class="works-01" href="work4.html">
                     <div class="works__hover-btn fadeUpTrigger">
                         <div class="works-img">
                             <img src="img/works/app_4.jpg" alt="お試しゲームアプリ">
                         </div>
                     </div>
                     <div class="works__hover-btn">
-                        <div class="work-01__text">
+                        <div class="works-01__text">
                             <div class="description-text">
                                 <div class="tag-text">application</div>
                                 <div><h3>シューティングゲームアプリ</h3></div>
@@ -215,14 +252,14 @@
                         </div>
                     </div>
                 </a>
-                <a class="works-02" href="https://risa-portfolio.com/works-app-omikuji">
+                <a class="works-02" href="work5.html">
                     <div class="works__hover-btn fadeUpTrigger">
                         <div class="works-img">
                             <img src="img/works/app_5.jpg" alt="お試しゲームアプリ">
                         </div>
                     </div>
                     <div class="works__hover-btn">
-                        <div class="work-02__text">
+                        <div class="works-02__text">
                             <div class="description-text">
                                 <div class="tag-text">application</div>
                                 <div><h3>15スライドパズル</h3></div>
@@ -233,14 +270,14 @@
                         </div>
                     </div>
                 </a>
-                <a class="works-01" href="https://risa-portfolio.com/works-app-omikuji">
+                <a class="works-01" href="work6.html">
                     <div class="works__hover-btn fadeUpTrigger">
                         <div class="works-img">
                             <img src="img/works/app_6.jpg" alt="お試しゲームアプリ">
                         </div>
                     </div>
                     <div class="works__hover-btn">
-                        <div class="work-01__text">
+                        <div class="works-01__text">
                             <div class="description-text">
                                 <div class="tag-text">application</div>
                                 <div><h3>ストップウォッチゲームアプリ</h3></div>
@@ -262,7 +299,7 @@
                         将来、「個」のスキルで戦っている人たちのサポートができるよう
                         WEBデザインやアプリ作成、データベース(Oracle)などを日々勉強しております。</p>
                     <div class="about__profile-btn">
-                        <a class="big-btn" href="https://risa-portfolio.com/about">
+                        <a class="big-btn" href="about.html">
                             <div class="js_piechart" data-chartval="100">
                                 <svg class="pie_chart bg">
                                     <circle></circle></svg>
@@ -313,7 +350,7 @@
                         <ul class="scroll-infinity__list scroll-infinity__list--left">
                             <li class="scroll-infinity__item"><img src="img/photo/photo_10.jpg" /><span>風景写真</span></li>
                             <li class="scroll-infinity__item"><img src="img/photo/photo_11.jpg" /><span>風景写真</span></li>
-                            <li class="scroll-infinity__item"><img src="img/photo/photo_12.jpg" /><span>風景写真</span></li>
+                            <li class="scroll-infinity__item"><img src="img/photo/photo_12.jpg" /><span>風景写真</span></a></li>
                             <li class="scroll-infinity__item"><img src="img/photo/photo_13.jpg"  /><span>風景写真</span></li>
                             <li class="scroll-infinity__item"><img src="img/photo/photo_14.jpg"  /><span>風景写真</span></li>
                             <li class="scroll-infinity__item"><img src="img/photo/photo_15.jpg"  /><span>風景写真</span></li>
@@ -354,9 +391,9 @@
         <div class="footer__content-wrapper">
             <nav>
                 <ul>
-                    <li class="footer__list01"><a href="https://risa-portfolio.com">TOP</a></li>
-                    <li class="footer__list01"><a href="https://risa-portfolio.com/works">WORKS</a></li>
-                    <li class="footer__list02"><a href="https://risa-portfolio.com/about">ABOUT</a></li>
+                    <li class="footer__list01"><a href="https://lisa6w6asil.github.io/PortfolioKR/">TOP</a></li>
+                    <li class="footer__list01"><a href="#works">WORKS</a></li>
+                    <li class="footer__list02"><a href="#about">ABOUT</a></li>
                 </ul>
             </nav>
             <small>&copy; 2025 RISA KANEKO</small>
