@@ -222,7 +222,7 @@ body {
       font-size: 20px; /* 小さめに調整 */
       white-space: normal; /* 折り返しOKにする */
       overflow: visible; /* はみ出てもちゃんと表示されるように */
-      line-height: 1.4; /* 行間ちょっと余裕持たせるとキレイ */
+      line-height: 1.4; /* 行間ちょっと余裕持たせる */
       padding: 0 10px; /* スマホで端っこにくっつかないように余白つける */
       text-align: center; /* 必要なら中央揃えも */
     }
@@ -245,7 +245,8 @@ body {
   }
 
 
-/* work */
+
+/* work　App */
 html {
   font-size: 100%;
 }
@@ -258,30 +259,14 @@ ul {
 }
 
 .content {
-  padding: 0 200px;
-  margin: 0px auto;
+  max-width: 1000px;
+  padding: 0 20px;
+  margin: 20px auto;
 }
 
 #mainvisual {
   padding: 10px;
 }
-#mainvisual.details {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* 背景を少し透けさせる */
-    color: rgb(167, 32, 32);
-    padding: 10px;
-    text-align: center;
-    opacity: 0; /* 初期状態では非表示 */
-    transition: opacity 0.3s ease; /* スムーズな表示を実現 */
-  }
-  #mainvisual:hover .details {
-    opacity: 1; /* ホバー時に表示される */
-  }
-
-
 #thumbnail {
   display: flex;
 }
@@ -290,21 +275,22 @@ ul {
   padding: 10px;
 }
 
+
 @media screen and (max-width: 758px) {
   .content {
-    padding: 0 10px;
-    margin: 10px auto;
-  }
+     padding: 0 10px;
+     margin: 10px auto;
+   }
 
-  #mainvisual {
-    padding: 5px;
-  }
-  #thumbnail li {
-    padding: 5px;
-  }
-}
+   #mainvisual {
+     padding: 5px;
+   }
+   #thumbnail li {
+     padding: 5px;
+   }
+ }
 
-/* works */
+/* works website*/
 .works {
   padding-top: 70px;
   padding-bottom: 90px;
@@ -574,7 +560,7 @@ p.works-btn__p::after {
 }
 
 a .btn-text01 {
-    color: #84B5C5;
+    color: #80edaa;
     font-size: 15px;
     letter-spacing: 0.1em;
     font-weight: 500;
@@ -584,7 +570,7 @@ a .btn-text01 {
 }
 
 a .btn-text02 {
-    color: #84B5C5;
+    color: #80edaa;
     font-size: 15px;
     letter-spacing: 0.1em;
     font-weight: 500;
@@ -633,7 +619,7 @@ a .btn-text02 {
 
 .js_piechart.hovered .pie_chart.fg circle {
     animation: circleAnimation 2s ease forwards;
-    stroke: #84B5C5;
+    stroke: #80EDAA;
 }
 
 @keyframes circleAnimation {
@@ -754,6 +740,7 @@ a .btn-text02 {
     height: 65px; /* ボタンの高さを65pxに変更 */
     padding-right: 0px;
 }
+
 
 .js_piechart ::before {
     width: 20px;
