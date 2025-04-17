@@ -259,21 +259,29 @@ ul {
 }
 
 .content {
+  max-width: none;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
   max-width: 1000px;
   padding: 0 20px;
   margin: 20px auto;
 }
 
-#mainvisual {
-  padding: 10px;
-}
-#thumbnail {
-  display: flex;
-}
-#thumbnail li {
-  width: 20%;
-  padding: 10px;
-}
+  #mainvisual {
+    width: 100%;
+    flex: 1
+  }
+  
+  #thumbnail {
+    display: flex;
+    flex-direction: column;
+    width: 150px;   /* ← ここを小さめ固定サイズにするのがコツ */
+    margin-left: 20px;
+  }
+  #thumbnail li {
+    padding: 10px;
+  }
 
 
 @media screen and (max-width: 758px) {
